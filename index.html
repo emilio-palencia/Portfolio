@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emilio Palencia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/itsabeaver.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">EP.</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="toggle-icon sun">☀</span>
+        <span class="toggle-icon moon">☽</span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero-content fade-up">
+
+      <div class="hero-photo-placeholder" id="profilePhoto">
+        <img src="assets/moi2.jpeg" alt="Emilio Palencia" />
+      </div>
+
+      <div class="hero-text">
+        <p class="hero-eyebrow">2nd Year · Mechanical Engineering</p>
+        <h1 class="hero-name">Emilio Palencia</h1>
+        <p class="hero-tagline">
+          Mechanical Team Member @ Toronto MetRobotics
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact"  class="btn btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label">01 — About</div>
+      <div class="about-grid">
+
+        <div class="about-bio fade-up">
+          <h2 class="section-heading">About me</h2>
+          <p>
+            I'm a 2nd-year Mechanical Engineering student at <strong>Toronto Metropolitan University</strong>,
+            with a strong focus on structural analysis, computational modelling/simulation, and CAD design.
+          </p>
+          <p>
+            I like getting hands-on: fabricating parts, iterating designs,
+            and pushing ideas from concept to prototype. I also LOVE everything related to materials science,
+            from understanding how materials behave under stress to learning new properties and
+            applications of different materials.
+          </p>
+        </div>
+
+        <div class="about-skills fade-up">
+          <h3>Core Skills</h3>
+          <ul class="skill-list">
+            <li><span class="skill-dot"></span>SolidWorks / Fusion 360</li>
+            <li><span class="skill-dot"></span>ANSYS / FEA Simulation</li>
+            <li><span class="skill-dot"></span>MATLAB &amp; Simulink</li>
+            <li><span class="skill-dot"></span>Python (NumPy, SciPy, Matplotlib)</li>
+            <li><span class="skill-dot"></span>GD&amp;T · Technical Drawing</li>
+            <li><span class="skill-dot"></span>Stress &amp; Fatigue Analysis</li>
+          </ul>
+
+          <div class="education-card">
+            <p class="edu-label">Education</p>
+            <p class="edu-degree">B.Eng. Mechanical Engineering + Co-op</p>
+            <p class="edu-school">Toronto Metropolitan University · Expected 2030</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- projects -->
+  <!--   to add another project, copy and paste:-->
+  <!--  <article class="project-card fade-up">
+          <div class="card-image-wrap">
+
+            <img src="assets/flower.jpg" alt="...">
+
+            <span class="card-tag">CAD · SolidWorks</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Precision Bracket Assembly</h3>
+            <p class="card-desc">
+              Designed and modelled a multi-component load-bearing bracket assembly in SolidWorks.
+              Includes full parametric modelling, assembly constraints, and production-ready
+              technical drawings with GD&amp;T annotations.
+            </p>
+            <div class="card-meta">
+              <span>SolidWorks</span>
+              <span>GD&amp;T</span>
+              <span>Technical Drawing</span>
+            </div>
+          </div>
+        </article>
+
+        -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label">02 — Projects</div>
+      <h2 class="section-heading fade-up">Selected Work</h2>
+      <div class="projects-grid">
+
+        <article class="project-card fade-up">
+          <div class="card-image-wrap">
+
+            <img src="assets/roboarm.jpg" alt="...">
+
+            <span class="card-tag">CAD · SolidWorks</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">5-DOF Robotic Arm</h3>
+            <p class="card-desc">
+              Designing and building a 5-DOF robotic arm controlled by a hand-sized master arm using
+              potentiometer-based position sensing.
+              Includes Python-based control software, allowing record/playback functions and automation of repetitive tasks.
+            </p>
+            <div class="card-meta">
+              <span>SolidWorks</span>
+              <span>Python</span>
+              <span>Arduino</span>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="project-card fade-up">
+          <div class="card-image-wrap">
+
+            <img src="assets/Animation40kN.gif" alt="...">
+
+            <span class="card-tag">Structural · Ansys</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Tri-cone drill bit FEA Study</h3>
+            <p class="card-desc">
+              Conducted static structural analysis on Tricone drill bit under 40kN axial load
+              using Ansys. Full report currently in progress, comparing Tricone bit performance to DTH and Top
+              Hammer drilling methods under similar parameters.
+            </p>
+            <div class="card-meta">
+              <span>Ansys Workbench</span>
+              <span>FEA</span>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="project-card fade-up">
+          <div class="card-image-wrap">
+
+            <img src="assets/endeffector.jpg" alt="...">
+
+            <span class="card-tag">Design · SolidWorks</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">End Effector-Claw</h3>
+            <p class="card-desc">
+              Designed and 3D-printed a wrist-mountable end effector as part of the TMR recruitment
+              package, incorporating the provided mounting interface, internal motor packaging, and DFM
+              considerations to accommodate a 0.10-1.00 kg payload.
+            </p>
+            <div class="card-meta">
+              <span>SolidWorks</span>
+              <span>3D Printing</span>
+              <span>GD&T</span>
+            </div>
+          </div>
+        </article>
+        
+
+      </div>
+    </div>
+  </section>
+
+
+<!-- contact section-->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label">03 — Contact</div>
+      <div class="contact-block fade-up">
+        <h2 class="section-heading">Let's connect</h2>
+        <p>
+          I'm currently looking for internship opportunities.
+          Whether you have a role, a question, or just want to connect, feel free to reach out.
+        </p>
+
+        <a href="mailto:emilio.palencia@torontomu.ca" class="contact-email">
+          emilio.palencia@torontomu.ca
+        </a>
+
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/emiliopalencia/" target="_blank" rel="noopener" class="social-link">LinkedIn ↗</a>
+          <a href="https://github.com/emilio-palencia"    target="_blank" rel="noopener" class="social-link">GitHub ↗</a>
+          <a href="assets/EmilioPalenciaResume.pdf"                  target="_blank" rel="noopener" class="social-link">Résumé PDF ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2026 Emilio Palencia</span>
+      <span class="footer-sep">·</span>
+      <span>Mechanical Engineering · Toronto Metropolitan University</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
